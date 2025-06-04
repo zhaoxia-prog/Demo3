@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1755581_demo3.PDFGenerator</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PDFGenerator</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PDFGenerator = Class.create();
+// var pga = new sn_pdfgeneratorutils.PDFGenerationAPI;
+PDFGenerator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    // 生成PDF的主方法
+    generatePDF: function() {
+        var variable1 = this.getParameter("sysparm_variable1");
+        var variable2 = this.getParameter("sysparm_variable2");
+        var title = this.getParameter("sysparm_title");
+        // console.log('88888888', variable1, variable2, title);
+        // 验证输入
+        if (!variable1 || !variable2) {
+            return {
+                error: true,
+                message: "缺少必要的参数"
+            };
+        }
+        // 准备PDF内容
+        var pdfContent = this._buildPDFContent(variable1, variable2, title);
+        // 生成PDF
+        // var pdf = this._generatePDFDocument(pdfContent, title);
+        // 返回PDF内容（Base64编码）
+        // return JSON.stringify();
+        var result = {
+            // "error": false,
+            // "pdfContent": pdf.getContent(),
+            // "fileName": "report_" + new Date().getTime() + ".pdf"
+            "key": "1111",
+            "variable1": variable1,
+            "variable2": variable2,
+            "pdfContent": pdfContent,
+        };
+        return JSON.stringify(result);
+    },
+    // 构建PDF内容的辅助方法
+    _buildPDFContent: function(variable1, variable2, title) {
+        // var htmlContent = '<html><body style="font-family: Arial, sans-serif; padding: 20px;">';
+        // htmlContent += '<h1 style="color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px;">' +
+        //     (title || "PDF Report") + '</h1>';
+        // htmlContent += '<div style="margin-top: 20px; line-height: 1.6;">';
+        // htmlContent += '<p><strong>变量1:</strong> ' + this._escapeHTML(variable1) + '</p>';
+        // htmlContent += '<p><strong>变量2:</strong> ' + this._escapeHTML(variable2) + '</p>';
+        // htmlContent += '</div>';
+        // htmlContent += '<div style="margin-top: 40px; font-size: 12px; color: #888;">';
+        // htmlContent += '生成时间: ' + new Date().toLocaleString();
+        // htmlContent += '</div>';
+        // htmlContent += '</body></html>';
+        // return htmlContent;
+        return "11111";
+    },
+
+    // 生成PDF文档的辅助方法
+    // _generatePDFDocument: function(htmlContent, title) {
+    //     // var result = v.convertToPDF(htmlContent, undefined, undefined, "myPDF");
+    //     var pdf = new sn_pdf.PDF();
+    //     pdf.setContent(htmlContent);
+    //     pdf.setName(title + ".pdf");
+    //     pdf.setTitle(title);
+    //     pdf.setAuthor("ServiceNow");
+    //     pdf.setSubject("Generated from ServiceNow");
+    //     return pdf;
+    // },
+    // HTML转义方法
+    // _escapeHTML: function(str) {
+    //     if (!str) return "";
+    //     return str
+    //         .replace(/&/g, "&amp;")
+    //         .replace(/</g, "&lt;")
+    //         .replace(/>/g, "&gt;")
+    //         .replace(/"/g, "&quot;")
+    //         .replace(/'/g, "&#039;");
+    // },
+    type: 'PDFGenerator'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-28 07:43:34</sys_created_on>
+        <sys_id>561ef65583796e1034af11b6feaad36d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>PDFGenerator</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_script_include_561ef65583796e1034af11b6feaad36d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 15:25:25</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_script_include_561ef65583796e1034af11b6feaad36d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1755581_demo3.PDFGenerator&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;PDFGenerator&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var PDFGenerator = Class.create();
+// var pga = new sn_pdfgeneratorutils.PDFGenerationAPI;
+PDFGenerator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    // 生成PDF的主方法
+    generatePDF: function() {
+        var variable1 = this.getParameter("sysparm_variable1");
+        var variable2 = this.getParameter("sysparm_variable2");
+        var title = this.getParameter("sysparm_title");
+        // console.log('88888888', variable1, variable2, title);
+        // 验证输入
+        if (!variable1 || !variable2) {
+            return {
+                error: true,
+                message: "缺少必要的参数"
+            };
+        }
+        // 准备PDF内容
+        var pdfContent = this._buildPDFContent(variable1, variable2, title);
+        // 生成PDF
+        // var pdf = this._generatePDFDocument(pdfContent, title);
+        // 返回PDF内容（Base64编码）
+        // return JSON.stringify();
+        var result = {
+            // "error": false,
+            // "pdfContent": pdf.getContent(),
+            // "fileName": "report_" + new Date().getTime() + ".pdf"
+            "key": "1111",
+            "variable1": variable1,
+            "variable2": variable2,
+            "pdfContent": pdfContent,
+        };
+        return JSON.stringify(result);
+    },
+    // 构建PDF内容的辅助方法
+    _buildPDFContent: function(variable1, variable2, title) {
+        // var htmlContent = '&lt;html&gt;&lt;body style="font-family: Arial, sans-serif; padding: 20px;"&gt;';
+        // htmlContent += '&lt;h1 style="color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px;"&gt;' +
+        //     (title || "PDF Report") + '&lt;/h1&gt;';
+        // htmlContent += '&lt;div style="margin-top: 20px; line-height: 1.6;"&gt;';
+        // htmlContent += '&lt;p&gt;&lt;strong&gt;变量1:&lt;/strong&gt; ' + this._escapeHTML(variable1) + '&lt;/p&gt;';
+        // htmlContent += '&lt;p&gt;&lt;strong&gt;变量2:&lt;/strong&gt; ' + this._escapeHTML(variable2) + '&lt;/p&gt;';
+        // htmlContent += '&lt;/div&gt;';
+        // htmlContent += '&lt;div style="margin-top: 40px; font-size: 12px; color: #888;"&gt;';
+        // htmlContent += '生成时间: ' + new Date().toLocaleString();
+        // htmlContent += '&lt;/div&gt;';
+        // htmlContent += '&lt;/body&gt;&lt;/html&gt;';
+        // return htmlContent;
+        return "11111";
+    },
+
+    // 生成PDF文档的辅助方法
+    // _generatePDFDocument: function(htmlContent, title) {
+    //     // var result = v.convertToPDF(htmlContent, undefined, undefined, "myPDF");
+    //     var pdf = new sn_pdf.PDF();
+    //     pdf.setContent(htmlContent);
+    //     pdf.setName(title + ".pdf");
+    //     pdf.setTitle(title);
+    //     pdf.setAuthor("ServiceNow");
+    //     pdf.setSubject("Generated from ServiceNow");
+    //     return pdf;
+    // },
+    // HTML转义方法
+    // _escapeHTML: function(str) {
+    //     if (!str) return "";
+    //     return str
+    //         .replace(/&amp;/g, "&amp;amp;")
+    //         .replace(/&lt;/g, "&amp;lt;")
+    //         .replace(/&gt;/g, "&amp;gt;")
+    //         .replace(/"/g, "&amp;quot;")
+    //         .replace(/'/g, "&amp;#039;");
+    // },
+    type: 'PDFGenerator'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-28 07:43:34&lt;/sys_created_on&gt;&lt;sys_id&gt;561ef65583796e1034af11b6feaad36d&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDFGenerator&lt;/sys_name&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_561ef65583796e1034af11b6feaad36d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-28 15:25:25&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>719416986</payload_hash>
+        <record_name>PDFGenerator</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-28 15:25:25</sys_created_on>
+        <sys_id>daf7e0698371ae1034af11b6feaad334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197177f8f750000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 15:25:25</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>92f7e0695971ae1061246aaaca4e0f34</update_guid>
+        <update_guid_history>92f7e0695971ae1061246aaaca4e0f34:719416986,c2d7e069ae71ae1069831193a040393d:1707354606,a8a72829d571ae108fc593a8701dfecc:719416986,b02728291671ae1046c6b207b18d86c6:-1076866157,59a66c65f571ae105c895f0d177485c5:337685886,9765ec65ef71ae10bfd80bd294eadc57:-1020391494,cfb42c255071ae1093390da99c07c067:-849857165,8494a0255c71ae10d4b43ef56fc868f2:1740670740,1634a0256771ae10100c0dac9c3b78fe:45120126,b3146825fa71ae1075c389a67354e130:-585604252,e2f364257d71ae10d93e6e38ff31a1f3:-757379834,b1d3a0e16571ae10626d1de314d42f45:-459417282,adb3e8a1c671ae10b0c5396b318904a8:-1932981270,fb132c61fe71ae106433a70ca2c8d35e:206307738,5dc1e021cf71ae10f45d025c04257ae2:-456348625,c63fd82dca31ae10ceb887aad5457052:580996034,238c94e5cc31ae106208600e563dc172:1896543676,f7f99ce5e031ae101fb06816127086eb:1914982991,75080b5145b96e10ea6f8b9ed4bb9b11:1203567605,a8a607115cb96e10fee4334aac4fc36e:683240700,47b54b9d89796e1032e7dd8aef027dea:-335761607,c524079ddc796e1002b04bdef225c34c:804004227,94a00b1980796e101e405e9aad63c1f7:-1919108346,d54e369129796e10eeacb487b18202eb:-1965497367</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-03 04:44:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>92289444e9804ea4acd1e37bb2a1b044</sys_id>
+        <sys_metadata>561ef65583796e1034af11b6feaad36d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PDFGenerator</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_script_include_561ef65583796e1034af11b6feaad36d</sys_update_name>
+        <sys_update_version display_value="sys_script_include_561ef65583796e1034af11b6feaad36d">daf7e0698371ae1034af11b6feaad334</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-03 04:44:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script><![CDATA[// function handleOk() {
+//     // 返回结果给父窗口
+//     console.log("1111");
+//     // 关闭模态框
+//     GlideModal.get().destroy();
+// }
+
+// function handleCancel() {
+//     console.log("1111");
+//     GlideModal.get().destroy();
+// }]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1755581_demo3_custom_dialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <!-- <div style="padding: 15px; text-align: center;"> -->
+        <h4>${jvar_body}</h4>
+        <!-- <button class="btn btn-primary" style="margin-right: 10px;" onclick="handleOk()">OK</button>
+        <button class="btn btn-default" onclick="handleCancel()">Cancel</button>
+    </div> -->
+
+    <!-- <script>
+        function returnButton(value) {
+            // 将选择结果传回父窗口
+            window.parent.dialogResult = value;
+            // 关闭对话框
+            GlideModal.get().destroy();
+        }
+    </script> -->
+</j:jelly>]]></html>
+        <name>custom_dialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:54:50</sys_created_on>
+        <sys_id>2d64e8fd8335ee1034af11b6feaad398</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>custom_dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_ui_page_2d64e8fd8335ee1034af11b6feaad398</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 10:20:20</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_ui_page_2d64e8fd8335ee1034af11b6feaad398</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[// function handleOk() {
+//     // 返回结果给父窗口
+//     console.log("1111");
+//     // 关闭模态框
+//     GlideModal.get().destroy();
+// }
+
+// function handleCancel() {
+//     console.log("1111");
+//     GlideModal.get().destroy();
+// }]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_1755581_demo3_custom_dialog.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;!-- &lt;div style="padding: 15px; text-align: center;"&gt; --&gt;
+        &lt;h4&gt;${jvar_body}&lt;/h4&gt;
+        &lt;!-- &lt;button class="btn btn-primary" style="margin-right: 10px;" onclick="handleOk()"&gt;OK&lt;/button&gt;
+        &lt;button class="btn btn-default" onclick="handleCancel()"&gt;Cancel&lt;/button&gt;
+    &lt;/div&gt; --&gt;
+
+    &lt;!-- &lt;script&gt;
+        function returnButton(value) {
+            // 将选择结果传回父窗口
+            window.parent.dialogResult = value;
+            // 关闭对话框
+            GlideModal.get().destroy();
+        }
+    &lt;/script&gt; --&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;custom_dialog&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-29 09:54:50&lt;/sys_created_on&gt;&lt;sys_id&gt;2d64e8fd8335ee1034af11b6feaad398&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;custom_dialog&lt;/sys_name&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_2d64e8fd8335ee1034af11b6feaad398&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-29 10:20:20&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>246125982</payload_hash>
+        <record_name>custom_dialog</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 10:20:20</sys_created_on>
+        <sys_id>0fbba43d8375ee1034af11b6feaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971b8e9ba70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 10:20:20</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>c3bba43d7a75ee10e094f01b1537f28d</update_guid>
+        <update_guid_history>c3bba43d7a75ee10e094f01b1537f28d:246125982,76da24f96175ee10eaf94d67cd8c10b8:-945153416,86e9ec796875ee10d7538df255629f1e:-937193153,b8296079ce75ee105fcdf92d148e6b98:-351151016,23e8a039af75ee102da55fd8caf8b572:-2049944039,9f38e8f58875ee103c43da7bc56afe27:48435823,7028a0f5d775ee104918dcad1377fd82:1886397522,a1e724714075ee10f87656486f62bcea:-1309888881,58b76cb51f75ee10803ae5b6ec2f886a:1275076653,66e56435be75ee108b31918a187ad712:196342549</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 10:28:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>82edcd3ab44e43e2a82d7f0e042f8564</sys_id>
+        <sys_metadata>2d64e8fd8335ee1034af11b6feaad398</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom_dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_ui_page_2d64e8fd8335ee1034af11b6feaad398</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_2d64e8fd8335ee1034af11b6feaad398">0fbba43d8375ee1034af11b6feaad38d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 10:28:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

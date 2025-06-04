@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[updateComments = function() {
+    // 获取表名
+    var tableName = g_form.getTableName();
+    // 获取当前记录ID
+    var sysId = g_form.getUniqueValue();
+    // 获取更新的comments字段的值
+	var newCommentsValue = document.getElementById('new-comments').value;
+
+    // 发送 AJAX 请求
+    var ga = new GlideAjax('UpdateVariable');
+    // 调用Script Include方法
+    ga.addParam('sysparm_name', 'UpdateVariable');
+    ga.addParam('sysparm_sys_id', sysId);
+    ga.addParam('sysparm_table', tableName);
+    ga.addParam('sysparm_variable', newCommentsValue);
+
+    ga.getXMLAnswer(function(response) {
+        if (response === 'success') {
+            // 更新画面上comments字段
+            if (window.parent && window.parent.g_form) {
+                g_form.setValue('x_1755581_demo3_for_scripting.comments', newCommentsValue);
+            }
+            GlideModal.get().destroy();
+        } else {
+            alert('Failed to update: ' + response);
+        }
+    });
+
+};
+
+window.closeDialog = function() {
+    //Close the glide modal dialog window
+    GlideModal.get().destroy();
+};]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1755581_demo3_my_dialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <p style="text-align: left; font-weight: normal; margin-bottom: 10px;">
+        Please enter the comments you want to update.
+    </p>
+    <textarea id="new-comments" class="form-control"></textarea>
+    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+        <button id=" ok-btn" class="btn btn-primary" onclick="updateComments()" style="width: 80px;">OK</button>
+        <button id="cancel-btn" class="btn btn-default" onclick="window.closeDialog()" style="width: 80px;">Cancel</button>
+    </div>
+    <style>
+        .modal-body {
+            max-height: calc(100vh - 150px);
+            overflow-y: auto;
+        }
+    </style>
+</j:jelly>]]></html>
+        <name>my_dialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-03 02:14:58</sys_created_on>
+        <sys_id>af7cecdb8331221034af11b6feaad368</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>my_dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_ui_page_af7cecdb8331221034af11b6feaad368</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-03 06:01:15</sys_updated_on>
+    </sys_ui_page>
+</record_update>

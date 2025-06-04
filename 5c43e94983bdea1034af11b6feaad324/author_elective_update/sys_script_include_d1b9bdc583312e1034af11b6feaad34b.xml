@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1755581_demo3.GeneratePDFAjax</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GeneratePDFAjax</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GeneratePDFAjax = Class.create();
+GeneratePDFAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    generatePDF: function() {
+        var itemId = this.getParameter('sysparm_item_id');
+        var item = new GlideRecord('sc_cat_item');
+        if (item.get(itemId)) {
+            // 创建PDF内容
+            var pdf = new PDFDocument();
+            pdf.setTitle(item.getDisplayValue('name'));
+            pdf.addParagraph('Catalog Item: ' + item.getDisplayValue('name'));
+            pdf.addParagraph('Description: ' + item.getDisplayValue('description'));
+            // 添加更多内容...
+
+            // 生成PDF并返回下载URL
+            var attachment = pdf.generate(item.getDisplayValue('name') + '.pdf');
+            return attachment.getURL();
+        }
+        return '';
+    },
+    type: 'GeneratePDFAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 08:06:09</sys_created_on>
+        <sys_id>d1b9bdc583312e1034af11b6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GeneratePDFAjax</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_script_include_d1b9bdc583312e1034af11b6feaad34b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 08:06:09</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_script_include_d1b9bdc583312e1034af11b6feaad34b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1755581_demo3.GeneratePDFAjax&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GeneratePDFAjax&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GeneratePDFAjax = Class.create();
+GeneratePDFAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    generatePDF: function() {
+        var itemId = this.getParameter('sysparm_item_id');
+        var item = new GlideRecord('sc_cat_item');
+        if (item.get(itemId)) {
+            // 创建PDF内容
+            var pdf = new PDFDocument();
+            pdf.setTitle(item.getDisplayValue('name'));
+            pdf.addParagraph('Catalog Item: ' + item.getDisplayValue('name'));
+            pdf.addParagraph('Description: ' + item.getDisplayValue('description'));
+            // 添加更多内容...
+
+            // 生成PDF并返回下载URL
+            var attachment = pdf.generate(item.getDisplayValue('name') + '.pdf');
+            return attachment.getURL();
+        }
+        return '';
+    },
+    type: 'GeneratePDFAjax'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-27 08:06:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d1b9bdc583312e1034af11b6feaad34b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GeneratePDFAjax&lt;/sys_name&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_d1b9bdc583312e1034af11b6feaad34b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-27 08:06:09&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-914123120</payload_hash>
+        <record_name>GeneratePDFAjax</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 08:06:09</sys_created_on>
+        <sys_id>96d9398583312e1034af11b6feaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19710c70c660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 08:06:09</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>9ad93985e0312e10f86f855666764d79</update_guid>
+        <update_guid_history>9ad93985e0312e10f86f855666764d79:-914123120</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 08:19:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>85de8f5590ae4e64994f9cc7a91e0081</sys_id>
+        <sys_metadata>d1b9bdc583312e1034af11b6feaad34b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GeneratePDFAjax</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_script_include_d1b9bdc583312e1034af11b6feaad34b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_d1b9bdc583312e1034af11b6feaad34b">96d9398583312e1034af11b6feaad37a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 08:19:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

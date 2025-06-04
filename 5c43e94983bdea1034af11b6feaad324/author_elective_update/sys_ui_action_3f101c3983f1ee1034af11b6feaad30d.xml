@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>submit</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Confirm Dialog</name>
+        <onclick>showConfirmDialog()</onclick>
+        <order/>
+        <script><![CDATA[function showConfirmDialog() {
+    var dialog = new GlideModal('my_modal');
+    // dialog.setPreference('body', 'This is a test modal body');
+    dialog.setTitle('This is a test modal title');
+    dialog.setWidth(550);
+    // dialog.renderWithContent('<div>this is a test</div>');
+	dialog.render();
+	// var gdw = new GlideDialogWindow('my_modal');
+	// gdw.setSize(750,300);
+	// // gdw.setPreference('table_name', g_form.getTableName());
+	// gdw.render();
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 08:32:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f101c3983f1ee1034af11b6feaad30d</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Confirm Dialog</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_ui_action_3f101c3983f1ee1034af11b6feaad30d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 14:20:12</sys_updated_on>
+        <table>x_1755581_demo3_for_scripting</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_ui_action_3f101c3983f1ee1034af11b6feaad30d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;submit&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Confirm Dialog&lt;/name&gt;&lt;onclick&gt;showConfirmDialog()&lt;/onclick&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function showConfirmDialog() {
+    var dialog = new GlideModal('my_modal');
+    // dialog.setPreference('body', 'This is a test modal body');
+    dialog.setTitle('This is a test modal title');
+    dialog.setWidth(550);
+    // dialog.renderWithContent('&lt;div&gt;this is a test&lt;/div&gt;');
+	dialog.render();
+	// var gdw = new GlideDialogWindow('my_modal');
+	// gdw.setSize(750,300);
+	// // gdw.setPreference('table_name', g_form.getTableName());
+	// gdw.render();
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-29 08:32:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3f101c3983f1ee1034af11b6feaad30d&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;Confirm Dialog&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_3f101c3983f1ee1034af11b6feaad30d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-29 14:20:12&lt;/sys_updated_on&gt;&lt;table&gt;x_1755581_demo3_for_scripting&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1882871007</payload_hash>
+        <record_name>Confirm Dialog</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 14:20:12</sys_created_on>
+        <sys_id>4da22d3183b9ee1034af11b6feaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971c6a38240000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 14:20:12</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>05a22d3179b9ee10b24d1261b8316795</update_guid>
+        <update_guid_history>05a22d3179b9ee10b24d1261b8316795:1882871007,66c161bd6879ee10f3fa6055ea8d8a73:1401488178,def025bd3b79ee101fcbce391083d3c7:1882871007,836f593d3e79ee10e72af44893a52d3c:-2089890522,bd3f193dcd79ee10b9384679ff932a65:-1506246810,40ee55f90f79ee10ddb2e2713b3cb6a8:-1683322701,38bed9f9da79ee10211f2f3861d2a4d0:1695881253,546e5539be79ee1096b0355d21ac809d:-1133791924,0f5b9db52279ee10f1c2354b705f99ec:444814274,c7ca91356879ee10cf658ae21a0bc3a9:-859496535,bbc59d7d5b39ee10b0f754a93141ca8d:1622499587,1a73157d9b39ee10e543a4aeaa43b4c1:-1490573372,14c9e879b575ee103a02c5bc0d273d78:1867170145,503960797175ee10fcd1afaf2bc8239d:1923293036,3a9824392475ee103ded0d9a8844b518:-2081209428,84782039bf75ee1008f003cc2295264e:327302286,9b5824b52a75ee10f191f196eef054ee:1392214664,00876cb59b75ee1021a34bf3951da566:308637825,ca47e4b55f75ee106122a9d7dee1aa2e:-111605227,e81728354675ee10d1bee8238e106269:269386721,f3f5e0b1eb75ee10ecbb79c257bb7bd5:89600871,c662607d7f35ee108b90809ec30bd7ad:269386721,d742e8b9b935ee10d3a32564c6bceda3:-2129159286,b770acf99135ee10140169f6c73e6951:1279955725,f030207d8235ee100b8de93bffe8085f:-1134379002,59dd50b5e235ee10560a97b37dafbded:-1587169082,d459d8f10635ee1052c6941a8a4b1404:-1300891206,06c858b1c535ee10b089932317392609:1124422108,42481cb1f235ee10f87fdb24933462f2:947607947,18031c3918f1ee10e35af839e31aafbd:-1772092246</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 04:11:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>b943496d36614855b5915b2a2c199bb1</sys_id>
+        <sys_metadata>3f101c3983f1ee1034af11b6feaad30d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Confirm Dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent display_value="Demo3 For Scripting">3af28cb583b1ee1034af11b6feaad328</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_ui_action_3f101c3983f1ee1034af11b6feaad30d</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_3f101c3983f1ee1034af11b6feaad30d">4da22d3183b9ee1034af11b6feaad395</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 04:11:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

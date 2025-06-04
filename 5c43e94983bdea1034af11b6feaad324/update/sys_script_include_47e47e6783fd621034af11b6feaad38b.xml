@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1755581_demo3.ChangeReason</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ChangeReason</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ChangeReason = Class.create();
+ChangeReason.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    returnTheItemforInof: function() {
+        var sysId = this.getParameter('sysparm_sys_id');
+        var reqItem = new GLideRecord('sc_req_item');
+        reqItem.get(sysId);
+        reqItem.state = 12;
+        reqItem.update();
+        var task = new GLideRecord('sc_task');
+        task.initialize();
+        task.short_description = 'More Info for your software Request: ';
+        task.description = 'The request need more info. Please modify the details in below link: \n\n' +
+            'https://dev346812.service-now.com/sp?id=sc_cat_item& sys_id=401305f1477de290e36952e1d16d4315&catitem_id=' + sysId;
+        task.assigned_to = reqItem.requested_for;
+        task.task_type = 'task';
+        task.insert();
+        return 'OK';
+    },
+    type: 'ChangeReason'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 06:53:29</sys_created_on>
+        <sys_id>47e47e6783fd621034af11b6feaad38b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ChangeReason</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_script_include_47e47e6783fd621034af11b6feaad38b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 06:57:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

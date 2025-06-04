@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script><![CDATA[
+function closeMe() {
+  setTimeout(function(){
+    // closeGlideModal();
+  },100);
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1755581_demo3_custom_dialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <button onClick="closeMe">close</button>
+</j:jelly>]]></html>
+        <name>custom_dialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 10:28:49</sys_created_on>
+        <sys_id>259da4bd8375ee1034af11b6feaad375</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>custom_dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_ui_page_259da4bd8375ee1034af11b6feaad375</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 13:29:30</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_ui_page_259da4bd8375ee1034af11b6feaad375</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[
+function closeMe() {
+  setTimeout(function(){
+    // closeGlideModal();
+  },100);
+}]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_1755581_demo3_custom_dialog.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;button onClick="closeMe"&gt;close&lt;/button&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;custom_dialog&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-29 10:28:49&lt;/sys_created_on&gt;&lt;sys_id&gt;259da4bd8375ee1034af11b6feaad375&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;custom_dialog&lt;/sys_name&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_259da4bd8375ee1034af11b6feaad375&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-29 13:29:30&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1449443530</payload_hash>
+        <record_name>custom_dialog</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 13:29:31</sys_created_on>
+        <sys_id>9607557d8339ee1034af11b6feaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971c3bcef90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 13:29:31</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>5e07557dfd39ee107ff3c0e6821d05a4</update_guid>
+        <update_guid_history>5e07557dfd39ee107ff3c0e6821d05a4:-1449443530,beb39df1b339ee10cdd32a67bed43bf2:-739588203,1d43117daa39ee103c281f6ba4cb3453:-1017425819,2e231d3d8039ee10adf1e71b4162d7be:-1434226400,83f215f98a39ee1095a1e8c89a1ced04:-638271772,53c11979ad39ee10604fc77343cae1ec:297148164,2fad60fd4d75ee105619b4b3de968637:939505713</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 13:32:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>3bd29868d81a4c28af7302decfec9440</sys_id>
+        <sys_metadata>259da4bd8375ee1034af11b6feaad375</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom_dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_ui_page_259da4bd8375ee1034af11b6feaad375</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_259da4bd8375ee1034af11b6feaad375">9607557d8339ee1034af11b6feaad3a5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 13:32:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

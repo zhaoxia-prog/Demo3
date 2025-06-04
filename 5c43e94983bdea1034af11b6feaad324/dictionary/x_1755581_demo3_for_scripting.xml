@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3af28cb583b1ee1034af11b6feaad328" label="For Scripting" max_length="40" name="x_1755581_demo3_for_scripting" type="collection">
+        <element label="Applicant" max_length="32" name="applicant" reference="sys_user" type="reference"/>
+        <element label="Comments" max_length="40" name="comments" type="string"/>
+        <element label="Fulfiller" max_length="32" name="fulfiller" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="applicant"/>
+        </index>
+        <index name="index2">
+            <element name="fulfiller"/>
+        </index>
+    </element>
+</database>

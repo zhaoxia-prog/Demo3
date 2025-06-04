@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1755581_demo3_custom__dialog.do</endpoint>
+        <html><![CDATA[<div style="padding: 15px; text-align: center;">
+    <h4>您确定要执行此操作吗？</h4>
+    <p>此操作将更新工单状态，请谨慎确认。</p>
+    <button onclick="handleConfirm(true)" class="btn btn-primary" style="margin-right: 10px;">确认提交</button>
+    <button onclick="handleConfirm(false)" class="btn btn-default">放弃操作</button>
+</div>]]></html>
+        <name>custom__dialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 08:54:02</sys_created_on>
+        <sys_id>9e571c718335ee1034af11b6feaad3d2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>custom__dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_ui_page_9e571c718335ee1034af11b6feaad3d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:02:09</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_ui_page_9e571c718335ee1034af11b6feaad3d2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script/&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_1755581_demo3_custom__dialog.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;div style="padding: 15px; text-align: center;"&gt;
+    &lt;h4&gt;您确定要执行此操作吗？&lt;/h4&gt;
+    &lt;p&gt;此操作将更新工单状态，请谨慎确认。&lt;/p&gt;
+    &lt;button onclick="handleConfirm(true)" class="btn btn-primary" style="margin-right: 10px;"&gt;确认提交&lt;/button&gt;
+    &lt;button onclick="handleConfirm(false)" class="btn btn-default"&gt;放弃操作&lt;/button&gt;
+&lt;/div&gt;]]&gt;&lt;/html&gt;&lt;name&gt;custom__dialog&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-29 08:54:02&lt;/sys_created_on&gt;&lt;sys_id&gt;9e571c718335ee1034af11b6feaad3d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;custom__dialog&lt;/sys_name&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_9e571c718335ee1034af11b6feaad3d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-29 09:02:09&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1602229778</payload_hash>
+        <record_name>custom__dialog</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:02:09</sys_created_on>
+        <sys_id>8ad994358335ee1034af11b6feaad3b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971b47088a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:02:09</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>42d994359e35ee107ed795f47123efb4</update_guid>
+        <update_guid_history>42d994359e35ee107ed795f47123efb4:1602229778,8ff898b15235ee109cdd5a7f4ea79c7a:446676114,f7f758b16535ee10e5eca522cfad449f:60650580</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:05:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>47ba20fe1e5a4abc9945f2f7b4d20110</sys_id>
+        <sys_metadata>9e571c718335ee1034af11b6feaad3d2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom__dialog</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_ui_page_9e571c718335ee1034af11b6feaad3d2</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_9e571c718335ee1034af11b6feaad3d2">8ad994358335ee1034af11b6feaad3b4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:05:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

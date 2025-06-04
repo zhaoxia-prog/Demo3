@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1755581_demo3.PDFGenerator</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PDFGenerator</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PDFGenerator = Class.create();
+PDFGenerator.prototype = {
+    initialize: function() {},
+
+    generatePDF: function(recordId, tableName) {
+        var gr = new GlideRecord(tableName);
+        if (gr.get(recordId)) {
+            var pdf = new PDFDocument();
+            pdf.addText("Record: " + gr.getDisplayValue());
+            // 更复杂的PDF生成逻辑...
+            return pdf;
+        }
+        return null;
+    },
+    type: 'PDFGenerator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 07:15:43</sys_created_on>
+        <sys_id>ffcd6d8583fdea1034af11b6feaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PDFGenerator</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sys_script_include_ffcd6d8583fdea1034af11b6feaad323</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 07:15:43</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo3">5c43e94983bdea1034af11b6feaad324</application>
+        <file_path/>
+        <instance_id>03b9a1c8fb99a2181feef633beefdcfe</instance_id>
+        <instance_name>dev339253</instance_name>
+        <name>sys_script_include_ffcd6d8583fdea1034af11b6feaad323</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1755581_demo3.PDFGenerator&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;PDFGenerator&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var PDFGenerator = Class.create();
+PDFGenerator.prototype = {
+    initialize: function() {},
+
+    generatePDF: function(recordId, tableName) {
+        var gr = new GlideRecord(tableName);
+        if (gr.get(recordId)) {
+            var pdf = new PDFDocument();
+            pdf.addText("Record: " + gr.getDisplayValue());
+            // 更复杂的PDF生成逻辑...
+            return pdf;
+        }
+        return null;
+    },
+    type: 'PDFGenerator'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-27 07:15:43&lt;/sys_created_on&gt;&lt;sys_id&gt;ffcd6d8583fdea1034af11b6feaad323&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PDFGenerator&lt;/sys_name&gt;&lt;sys_package display_value="Demo3" source="x_1755581_demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Demo3"&gt;5c43e94983bdea1034af11b6feaad324&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_ffcd6d8583fdea1034af11b6feaad323&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-27 07:15:43&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1692676543</payload_hash>
+        <record_name>PDFGenerator</record_name>
+        <reverted_from/>
+        <source>dc43e94983bdea1034af11b6feaad328</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 07:15:43</sys_created_on>
+        <sys_id>df4e6d8583fdea1034af11b6feaad331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971098df860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 07:15:43</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>d34e6d856ffdea102b44ce319e469731</update_guid>
+        <update_guid_history>d34e6d856ffdea102b44ce319e469731:-1692676543</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 07:44:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1a9d9147de334e18bbbf2b248ab8a410</sys_id>
+        <sys_metadata>ffcd6d8583fdea1034af11b6feaad323</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PDFGenerator</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_scope_delete display_value="">064ef1f4438f453f817201baadf375c9</sys_scope_delete>
+        <sys_update_name>sys_script_include_ffcd6d8583fdea1034af11b6feaad323</sys_update_name>
+        <sys_update_version display_value="sys_script_include_ffcd6d8583fdea1034af11b6feaad323">df4e6d8583fdea1034af11b6feaad331</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 07:44:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

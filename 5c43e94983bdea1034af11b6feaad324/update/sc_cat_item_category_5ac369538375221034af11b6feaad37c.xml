@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Demo3 Request">1452e9df8335221034af11b6feaad3ae</sc_cat_item>
+        <sc_category display_value="Office">109cdff8c6112276003b17991a09ad65</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-03 06:16:05</sys_created_on>
+        <sys_id>5ac369538375221034af11b6feaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Office.Demo3 Request</sys_name>
+        <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
+        <sys_update_name>sc_cat_item_category_5ac369538375221034af11b6feaad37c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-03 06:16:05</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -4,8 +4,8 @@
         <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <category display_value="Services">109f0438c6112276003ae8ac13e7009d</category>
-        <checked_out>false</checked_out>
+        <category display_value="Office">109cdff8c6112276003b17991a09ad65</category>
+        <checked_out/>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
@@ -29,16 +29,16 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>catalog_upload</name>
+        <name>catalog_watchlist</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
-        <no_cart_v2>false</no_cart_v2>
+        <no_cart_v2>true</no_cart_v2>
         <no_delivery_time_v2>false</no_delivery_time_v2>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
         <no_quantity>false</no_quantity>
-        <no_quantity_v2>false</no_quantity_v2>
+        <no_quantity_v2>true</no_quantity_v2>
         <no_save_as_draft>false</no_save_as_draft>
         <no_search>false</no_search>
         <no_wishlist_v2>false</no_wishlist_v2>
@@ -47,61 +47,61 @@
         <ordered_item_link/>
         <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
         <picture/>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=de9fed0983fdea1034af11b6feaad3f6&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=9924e32783f1a21034af11b6feaad3e2&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
-        <request_method/>
+        <request_method>request</request_method>
         <roles/>
         <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description/>
+        <short_description>After submitting the request, add Manage to the watch list of the request item.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state>published</state>
+        <state/>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-27 07:23:19</sys_created_on>
-        <sys_id>de9fed0983fdea1034af11b6feaad3f6</sys_id>
-        <sys_mod_count>43</sys_mod_count>
-        <sys_name>catalog_upload</sys_name>
+        <sys_created_on>2025-06-04 10:16:26</sys_created_on>
+        <sys_id>9924e32783f1a21034af11b6feaad3e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>catalog_watchlist</sys_name>
         <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
-        <sys_update_name>sc_cat_item_de9fed0983fdea1034af11b6feaad3f6</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 10:15:03</sys_updated_on>
+        <sys_update_name>sc_cat_item_9924e32783f1a21034af11b6feaad3e2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-06-05 01:17:18</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>43</version>
+        <version>4</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
     </sc_cat_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=de9fed0983fdea1034af11b6feaad3f6"/>
-    <fx_price action="delete_multiple" query="id=de9fed0983fdea1034af11b6feaad3f6"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=9924e32783f1a21034af11b6feaad3e2"/>
+    <fx_price action="delete_multiple" query="id=9924e32783f1a21034af11b6feaad3e2"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="CNY">CNY</currency>
         <field>price</field>
-        <id>de9fed0983fdea1034af11b6feaad3f6</id>
+        <id>9924e32783f1a21034af11b6feaad3e2</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-27 07:23:20</sys_created_on>
-        <sys_id>3a00394983fdea1034af11b6feaad3d4</sys_id>
+        <sys_created_on>2025-06-04 10:16:26</sys_created_on>
+        <sys_id>8564236783f1a21034af11b6feaad313</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-27 07:23:20</sys_updated_on>
+        <sys_updated_on>2025-06-04 10:16:26</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>
@@ -109,16 +109,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>recurring_price</field>
-        <id>de9fed0983fdea1034af11b6feaad3f6</id>
+        <id>9924e32783f1a21034af11b6feaad3e2</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-05-27 07:23:20</sys_created_on>
-        <sys_id>7a00394983fdea1034af11b6feaad3d5</sys_id>
+        <sys_created_on>2025-06-04 10:16:27</sys_created_on>
+        <sys_id>0164236783f1a21034af11b6feaad314</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-27 07:23:20</sys_updated_on>
+        <sys_updated_on>2025-06-04 10:16:27</sys_updated_on>
         <table>sc_cat_item</table>
         <type>calculated</type>
     </fx_price>

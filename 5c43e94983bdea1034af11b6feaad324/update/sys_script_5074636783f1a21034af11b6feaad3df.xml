@@ -31,7 +31,6 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
     // Add your code here
-	console.log(current.requested_for.manager,"11111111111");
     if (current.requested_for.manager) {
         var ma = current.requested_for.manager;
         current.watch_list += "," + ma.sys_id;
@@ -44,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5074636783f1a21034af11b6feaad3df</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>AddWatchList</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demo3" source="x_1755581_demo3">5c43e94983bdea1034af11b6feaad324</sys_package>
@@ -52,7 +51,7 @@
         <sys_scope display_value="Demo3">5c43e94983bdea1034af11b6feaad324</sys_scope>
         <sys_update_name>sys_script_5074636783f1a21034af11b6feaad3df</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-05 01:26:05</sys_updated_on>
+        <sys_updated_on>2025-06-10 08:59:24</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
